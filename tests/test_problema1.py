@@ -1,6 +1,5 @@
 import unittest
 from pathlib import Path
-import os
 from datetime import datetime, timedelta
 from src.problema1 import cria_volume_temporario, informa_dados_arquivo, copia_ou_remove, cria_volume_final
 
@@ -58,7 +57,6 @@ class TestProblema1(unittest.TestCase):
         self.assertEqual(tamanho, 17)
         self.assertTrue(data_criacao)
         self.assertTrue(data_mod)
-
 
     
     def test_copia_ou_remove(self):
