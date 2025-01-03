@@ -93,12 +93,15 @@ def cria_volume_final(log_to, diretorio):
                 logging.info("Salvando os dados do arquivo %s em %s.", nome, log_to)
                 log.write(f"{nome:<20} | {tamanho:>10} | {data_criacao.strftime("%d/%m/%Y %H:%M:%S"):>20} | {data_modificacao.strftime("%d/%m/%Y %H:%M:%S"):>28}\n")
 
+def main():
+    try:
+        cria_volume_temporario(log_backup_from, diretorio_origem, diretorio_destino)
+        cria_volume_final(log_backup_to, diretorio_destino)
+        logging.info("Execução do programa concluída.")
+        print("Execução do programa concluída.")
+    except Exception as erro:
+        logging.error("Ocorreu um erro: %s", erro)
+        print(f"Ocorreu um erro: {erro}.")
 
-try:
-    cria_volume_temporario(log_backup_from, diretorio_origem, diretorio_destino)
-    cria_volume_final(log_backup_to, diretorio_destino)
-    logging.info("Execução do programa concluída.")
-    print("Execução do programa concluída.")
-except Exception as erro:
-    logging.error("Ocorreu um erro: %s", erro)
-    print(f"Ocorreu um erro: {erro}.")
+if __name__ == "__main__":
+    main()
