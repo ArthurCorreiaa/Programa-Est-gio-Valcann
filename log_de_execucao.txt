@@ -1,0 +1,13 @@
+03/01/2025 | 03:02:08 | INFO: Criando volume temporário.
+03/01/2025 | 03:02:08 | INFO: Criando volume final.
+03/01/2025 | 03:02:08 | INFO: Execução do programa concluída.
+03/01/2025 | 03:02:08 | INFO: Copiando \home\valcann\backupsFrom\arquivo1.txt para \home\valcann\backupsTo.
+03/01/2025 | 03:02:08 | INFO: Deletando o arquivo: \home\valcann\backupsFrom\arquivo2.txt.
+03/01/2025 | 03:02:08 | INFO: Criando volume final.
+03/01/2025 | 03:02:08 | INFO: Criando volume temporário.
+03/01/2025 | 03:02:08 | INFO: Salvando os dados do arquivo arquivo1.txt em \home\valcann\backupsFrom.log.
+03/01/2025 | 03:02:08 | INFO: Tempo de existência de arquivo1.txt: 0:00:00.006997
+03/01/2025 | 03:02:08 | INFO: Copiando \home\valcann\backupsFrom\arquivo1.txt para \home\valcann\backupsTo.
+03/01/2025 | 03:02:08 | INFO: Salvando os dados do arquivo arquivo2.txt em \home\valcann\backupsFrom.log.
+03/01/2025 | 03:02:08 | INFO: Tempo de existência de arquivo2.txt: 0:00:00.007001
+03/01/2025 | 03:02:08 | INFO: Copiando \home\valcann\backupsFrom\arquivo2.txt para \home\valcann\backupsTo.
