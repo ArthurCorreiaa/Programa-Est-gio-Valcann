@@ -72,9 +72,9 @@ def cria_volume_temporario(log_from, diretorio_origem, diretorio_destino):
                 logging.info("Salvando os dados do arquivo %s em %s.", nome, log_from)
                 log.write(f"{nome:<20} | {tamanho:>10} | {data_criacao.strftime("%d/%m/%Y %H:%M:%S"):>20} | {data_modificacao.strftime("%d/%m/%Y %H:%M:%S"):>28}\n")
 
-            diferenca_tempo = datetime.now() - data_criacao
-            logging.info("Tempo de existência de %s: %s", nome, diferenca_tempo)
-            copia_ou_remove(arquivo, data_criacao, diretorio_destino)
+                diferenca_tempo = datetime.now() - data_criacao
+                logging.info("Tempo de existência de %s: %s", nome, diferenca_tempo)
+                copia_ou_remove(arquivo, data_criacao, diretorio_destino)
 
 
 #Abrindo e editando (ou criando caso ainda não exista) o log de backupsTo
@@ -106,4 +106,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
