@@ -82,7 +82,7 @@ def cria_volume_final(log_to, diretorio):
     logging.info("Criando volume final.")
     # Abrindo e editando (ou criando caso não exista ainda) o arquivo de log de backupsTo
     with open(log_to, "w") as log:    
-        # Cria um cabeçlho no arquivo log_backup_to
+        # Cria um cabeçalho no arquivo log_backup_to
         log.write(cria_cabecalho())
         # Itera por cada elemento no diretório
         for arquivo in diretorio.iterdir():
@@ -103,5 +103,7 @@ def main():
         logging.error("Ocorreu um erro: %s", erro)
         print(f"Ocorreu um erro: {erro}.")
 
+
 if __name__ == "__main__":
     main()
+    
